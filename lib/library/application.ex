@@ -12,9 +12,11 @@ defmodule Library.Application do
       # Start the PubSub system
       {Phoenix.PubSub, name: Library.PubSub},
       # Start the Endpoint (http/https)
-      LibraryWeb.Endpoint
+      LibraryWeb.Endpoint,
       # Start a worker by calling: Library.Worker.start_link(arg)
       # {Library.Worker, arg}
+      # Start the Mongo standalone connection
+      {Mongo, Application.fetch_env!(:library, :mongo)}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
