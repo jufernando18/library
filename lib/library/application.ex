@@ -16,7 +16,7 @@ defmodule Library.Application do
       # Start a worker by calling: Library.Worker.start_link(arg)
       # {Library.Worker, arg}
       # Start the Mongo standalone connection
-      {Mongo, Application.fetch_env!(:library, :mongo)}
+      # {Mongo, Application.fetch_env!(:library, :mongo)}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

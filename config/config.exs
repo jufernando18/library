@@ -25,7 +25,7 @@ config :phoenix, :json_library, Jason
 
 # Configures mongo connection name
 config :library, :mongo,
-  name: Library.Repo,
+  name: Library.RepoMongoImpl,
   url: "mongodb",
   username: System.get_env("DB_USER"),
   password: System.get_env("DB_PASSWORD"),
