@@ -23,7 +23,7 @@ config :logger, :console,
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 
-# Configures mongo connection name
+# Configures mongo connection
 config :library, :mongo,
   name: Library.RepoMongoImpl,
   url: "mongodb",
